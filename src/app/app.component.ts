@@ -7,7 +7,12 @@ import { Tooltip, initTE } from 'tw-elements';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title: string = "Este es el título";
   ngOnInit() {
     initTE({ Tooltip });
+  }
+
+  cambiaTexto (context: any) {
+    context.title = "Hola! :D";
   }
 }

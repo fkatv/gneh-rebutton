@@ -10,6 +10,9 @@ import { RebuttonComponent } from './rebutton/rebutton.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    RebuttonComponent
   ]
 })
 export class UxModule { }
