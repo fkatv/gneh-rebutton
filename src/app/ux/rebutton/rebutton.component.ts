@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-
+import { Ripple, initTE } from 'tw-elements';
 @Component({
   selector: 'app-rebutton',
   templateUrl: './rebutton.component.html',
@@ -17,6 +17,7 @@ export class RebuttonComponent {
   };
 
   ngOnInit(): void {
+      initTE(Ripple);
       if (!this.options.click) {
         this.options.click = this.useless;
       }
